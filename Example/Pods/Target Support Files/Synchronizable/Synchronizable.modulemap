@@ -1,0 +1,6 @@
+framework module Synchronizable {
+  umbrella header "Synchronizable-umbrella.h"
+
+  export *
+  module * { export * }
+}

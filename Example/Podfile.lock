@@ -1,0 +1,27 @@
+PODS:
+  - Nimble (7.0.3)
+  - Quick (1.2.0)
+  - Synchronizable (0.1.0)
+
+DEPENDENCIES:
+  - Nimble (~> 7.0.2)
+  - Quick (~> 1.2.0)
+  - Synchronizable (from `../`)
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - Nimble
+    - Quick
+
+EXTERNAL SOURCES:
+  Synchronizable:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Nimble: 7f5a9c447a33002645a071bddafbfb24ea70e0ac
+  Quick: 58d203b1c5e27fff7229c4c1ae445ad7069a7a08
+  Synchronizable: 432c3ee074bce042cf6d8ea8c39435733f035b55
+
+PODFILE CHECKSUM: 80920ad8ddad712466641daa677885ee188c18cd
+
+COCOAPODS: 1.5.3

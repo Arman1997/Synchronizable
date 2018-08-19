@@ -1,0 +1,22 @@
+{
+  "name": "Synchronizable",
+  "version": "0.1.0",
+  "summary": "A short description of Synchronizable.",
+  "description": "TODO: Add long description of the pod here.",
+  "homepage": "https://github.com/armangalstyanhome/Synchronizable",
+  "license": {
+    "type": "MIT",
+    "file": "LICENSE"
+  },
+  "authors": {
+    "armangalstyanhome": "armangalstyan9597@gmail.com"
+  },
+  "source": {
+    "git": "https://github.com/armangalstyanhome/Synchronizable.git",
+    "tag": "0.1.0"
+  },
+  "platforms": {
+    "ios": "8.0"
+  },
+  "source_files": "Synchronizable/Classes/**/*"
+}
