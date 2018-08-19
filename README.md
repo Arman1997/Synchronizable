@@ -22,7 +22,7 @@ pod 'Synchronizable'
 
 ## Author
 
-armangalstyanhome, armangalstyan9597@gmail.com
+Arman Galstyan, armangalstyan9597@gmail.com
 
 ## License
 
