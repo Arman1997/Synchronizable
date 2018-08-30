@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		1AB0BF0ABC0A603F551F9734 /* Pods_Synchronizable_Tests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 79B92CC4C3F01F2F7162902C /* Pods_Synchronizable_Tests.framework */; };
 		607FACEC1AFB9204008FA782 /* Tests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACEB1AFB9204008FA782 /* Tests.swift */; };
+		BF6B6B2F212A20E600CE7309 /* SynchronizableObject.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B6B2E212A20E600CE7309 /* SynchronizableObject.swift */; };
+		BF6B6B31212A21AC00CE7309 /* SyncIdentifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = BF6B6B30212A21AC00CE7309 /* SyncIdentifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -20,6 +22,8 @@
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
 		79B92CC4C3F01F2F7162902C /* Pods_Synchronizable_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Synchronizable_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		BF6B6B2E212A20E600CE7309 /* SynchronizableObject.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SynchronizableObject.swift; sourceTree = "<group>"; };
+		BF6B6B30212A21AC00CE7309 /* SyncIdentifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SyncIdentifier.swift; sourceTree = "<group>"; };
 		DC89BA353BE2CC1BF47C5894 /* Pods-Synchronizable_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Synchronizable_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-Synchronizable_Tests/Pods-Synchronizable_Tests.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -55,6 +59,7 @@
 		607FACC71AFB9204008FA782 = {
 			isa = PBXGroup;
 			children = (
+				BF6B6B2D212A209000CE7309 /* Classes */,
 				607FACF51AFB993E008FA782 /* Podspec Metadata */,
 				607FACE81AFB9204008FA782 /* Tests */,
 				607FACD11AFB9204008FA782 /* Products */,
@@ -98,6 +103,15 @@
 			name = "Podspec Metadata";
 			sourceTree = "<group>";
 		};
+		BF6B6B2D212A209000CE7309 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				BF6B6B2E212A20E600CE7309 /* SynchronizableObject.swift */,
+				BF6B6B30212A21AC00CE7309 /* SyncIdentifier.swift */,
+			);
+			path = Classes;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -127,11 +141,12 @@
 			isa = PBXProject;
 			attributes = {
 				LastSwiftUpdateCheck = 0830;
-				LastUpgradeCheck = 0830;
+				LastUpgradeCheck = 0940;
 				ORGANIZATIONNAME = CocoaPods;
 				TargetAttributes = {
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
+						DevelopmentTeam = AS6V32XUFG;
 						LastSwiftMigration = 0900;
 						TestTargetID = 607FACCF1AFB9204008FA782;
 					};
@@ -214,6 +229,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				607FACEC1AFB9204008FA782 /* Tests.swift in Sources */,
+				BF6B6B31212A21AC00CE7309 /* SyncIdentifier.swift in Sources */,
+				BF6B6B2F212A20E600CE7309 /* SynchronizableObject.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -232,12 +249,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -270,6 +289,7 @@
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 4.0;
 			};
 			name = Debug;
 		};
@@ -285,12 +305,14 @@
 				CLANG_WARN_BOOL_CONVERSION = YES;
 				CLANG_WARN_COMMA = YES;
 				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
 				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
 				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
 				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
@@ -315,6 +337,7 @@
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
+				SWIFT_VERSION = 4.0;
 				VALIDATE_PRODUCT = YES;
 			};
 			name = Release;
@@ -323,6 +346,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 4AAF708EEFB53905DE67D0E9 /* Pods-Synchronizable_Tests.debug.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = AS6V32XUFG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -345,6 +369,7 @@
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = DC89BA353BE2CC1BF47C5894 /* Pods-Synchronizable_Tests.release.xcconfig */;
 			buildSettings = {
+				DEVELOPMENT_TEAM = AS6V32XUFG;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
